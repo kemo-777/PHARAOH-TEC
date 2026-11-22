@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#03050c">
+  <meta name="description" content="PHARAOH TEC — شركة تكنولوجيا عالمية رائدة في هندسة البرمجيات، الذكاء الاصطناعي، الأنظمة السحابية، والأمن السيبراني.">
+  <meta property="og:title" content="PHARAOH TEC | Shaping the Future of Global Technology">
+  <meta property="og:description" content="Next-generation enterprise software, artificial intelligence ecosystems, and mission-critical digital infrastructure.">
+  <meta property="og:type" content="website">
+  <title>PHARAOH TEC | Global Enterprise Technology & AI</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2303050c'/><rect x='6' y='6' width='88' height='88' rx='15' fill='none' stroke='%23e2be73' stroke-width='4'/><text x='50' y='65' font-family='sans-serif' font-weight='bold' font-size='44' fill='%23e2be73' text-anchor='middle'>PT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-inner">
+      <div class="loader-logo">P<span>T</span></div>
+      <div class="loader-bar"><span id="loaderFill"></span></div>
+      <div class="loader-text">INITIALIZING PHARAOH TEC CORE...</div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress & Ambient Glow -->
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="system-bar">
+    <div class="sys-left">
+      <span class="sys-dot"></span>
+      <span data-ar="حالة الأنظمة: جميع المنصات السحابية والذكاء الاصطناعي تعمل بكفاءة 99.99%" data-en="SYSTEM STATUS: ALL AI & CLOUD CLUSTERS OPERATIONAL (99.99% UPTIME)">حالة الأنظمة: جميع المنصات السحابية والذكاء الاصطناعي تعمل بكفاءة 99.99%</span>
+    </div>
+    <div class="sys-right">
+      <span class="mono">HQ: CAIRO · GLOBAL OPS</span>
+      <span class="sys-sep">|</span>
+      <a href="mailto:kareemabdelrazek289@gmail.com" class="mono">kareemabdelrazek289@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Sticky Glass Navigation -->
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="PHARAOH TEC home">
+      <span class="brand-mark">P<span>T</span></span>
+      <span class="brand-name">PHARAOH <b>TEC</b><small>GLOBAL TECHNOLOGY CORPORATION</small></span>
+    </a>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#about" data-ar="الشركة" data-en="Enterprise">الشركة</a>
+      <a href="#divisions" data-ar="القطاعات" data-en="Divisions">القطاعات</a>
+      <a href="#products" data-ar="المنصات والمنتجات" data-en="Platforms">المنصات والمنتجات</a>
+      <a href="#architecture" data-ar="البنية التحتية" data-en="Architecture">البنية التحتية</a>
+      <a href="#services" data-ar="الحلول" data-en="Solutions">الحلول</a>
+      <a href="#roadmap" data-ar="خارطة المستقبل" data-en="Roadmap">خارطة المستقبل</a>
+      <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+    </nav>
+    <div class="head-actions">
+      <button class="cmd-trigger" id="cmdBtn" type="button" title="Quick Navigation (Ctrl+K)">
+        <span data-ar="بحث سريع" data-en="Quick Jump">بحث سريع</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">EN</button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <canvas id="neuralCanvas" class="neural-canvas" aria-hidden="true"></canvas>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <i></i>
+          <span data-ar="مؤسسة تكنولوجية عالمية — الجيل القادم من البرمجيات والذكاء الاصطناعي" data-en="GLOBAL TECHNOLOGY ENTERPRISE — NEXT-GEN SOFTWARE & AI">مؤسسة تكنولوجية عالمية — الجيل القادم من البرمجيات والذكاء الاصطناعي</span>
+        </div>
+        <h1 data-ar="نبني البنية التحتية<br><em>للذكاء والتكنولوجيا</em><br>على مستوى العالم." data-en="Architecting the<br><em>intelligence & software</em><br>powering tomorrow.">نبني البنية التحتية<br><em>للذكاء والتكنولوجيا</em><br>على مستوى العالم.</h1>
+        <p data-ar="PHARAOH TEC مؤسسة تكنولوجية رائدة تصمم وتهندس منصات الذكاء الاصطناعي، الأنظمة البرمجية فائقة التوسع، والحلول الرقمية المؤسسية التي تقود التحول الرقمي من مصر إلى الأسواق العالمية." data-en="PHARAOH TEC is a flagship technology enterprise engineering artificial intelligence platforms, hyperscale software architectures, and mission-critical digital ecosystems from Egypt to global markets.">PHARAOH TEC مؤسسة تكنولوجية رائدة تصمم وتهندس منصات الذكاء الاصطناعي، الأنظمة البرمجية فائقة التوسع، والحلول الرقمية المؤسسية التي تقود التحول الرقمي من مصر إلى الأسواق العالمية.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#products">
+            <span data-ar="استكشف منظومة المنتجات" data-en="Explore Product Ecosystem">استكشف منظومة المنتجات</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+          <a class="btn secondary" href="#contact">
+            <span data-ar="حجز استشارة مؤسسية" data-en="Schedule Executive Briefing">حجز استشارة مؤسسية</span>
+          </a>
+        </div>
+
+        <div class="hero-kpis">
+          <div class="kpi-box">
+            <div class="kpi-num"><span class="counter" data-target="4">0</span>+</div>
+            <div class="kpi-label" data-ar="منصات عالمية نشطة" data-en="Production Platforms">منصات عالمية نشطة</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-num"><span class="counter" data-target="99.9">0</span>%</div>
+            <div class="kpi-label" data-ar="اعتمادية وأداء الأنظمة" data-en="System Reliability">اعتمادية وأداء الأنظمة</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-num"><span class="counter" data-target="24">0</span>/7</div>
+            <div class="kpi-label" data-ar="بنية سحابية عالمية" data-en="Global Cloud Ops">بنية سحابية عالمية</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-num">ISO</div>
+            <div class="kpi-label" data-ar="معايير أمان متقدمة" data-en="Security-First Core">معايير أمان متقدمة</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive 3D Command Core -->
+      <div class="hero-stage reveal">
+        <div class="holo-core" id="holoCore">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="core-sphere">
+            <div class="sphere-grid"></div>
+            <div class="sphere-emblem">
+              <span>PT</span>
+              <small>CORE v4.0</small>
+            </div>
+          </div>
+
+          <div class="hud-panel hud-1">
+            <div class="hud-head"><span class="dot cyan"></span><span class="mono">AI ENGINE // ACTIVE</span></div>
+            <div class="hud-body">
+              <strong data-ar="معالجة البيانات والذكاء التوليدي" data-en="Neural & Predictive Models">معالجة البيانات والذكاء التوليدي</strong>
+              <div class="hud-bar"><i style="width:92%"></i></div>
+            </div>
+          </div>
+
+          <div class="hud-panel hud-2">
+            <div class="hud-head"><span class="dot gold"></span><span class="mono">GLOBAL INFRASTRUCTURE</span></div>
+            <div class="hud-body">
+              <strong data-ar="انتشار سحابي متعدد المناطق" data-en="Multi-Region Edge Network">انتشار سحابي متعدد المناطق</strong>
+              <span class="mono sub-tag">CAIRO · LONDON · DUBAI · NY</span>
+            </div>
+          </div>
+
+          <div class="hud-panel hud-3">
+            <div class="hud-head"><span class="dot green"></span><span class="mono">ZERO-TRUST SECURITY</span></div>
+            <div class="hud-body">
+              <strong data-ar="تشفير وحماية على مستوى المؤسسات" data-en="Enterprise-Grade Encryption">تشفير وحماية على مستوى المؤسسات</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTERPRISE CAPABILITIES MARQUEE -->
+    <section class="ticker" aria-label="Enterprise capabilities">
+      <div class="ticker-track">
+        <span>ARTIFICIAL INTELLIGENCE</span><b>◆</b>
+        <span>HYPERSCALE SOFTWARE ENGINEERING</span><b>◆</b>
+        <span>ENTERPRISE CLOUD ARCHITECTURE</span><b>◆</b>
+        <span>CYBERSECURITY & ZERO-TRUST</span><b>◆</b>
+        <span>DATA INTELLIGENCE & ANALYTICS</span><b>◆</b>
+        <span>RESEARCH & DEVELOPMENT LABS</span><b>◆</b>
+        <span>ARTIFICIAL INTELLIGENCE</span><b>◆</b>
+        <span>HYPERSCALE SOFTWARE ENGINEERING</span><b>◆</b>
+        <span>ENTERPRISE CLOUD ARCHITECTURE</span><b>◆</b>
+        <span>CYBERSECURITY & ZERO-TRUST</span><b>◆</b>
+        <span>DATA INTELLIGENCE & ANALYTICS</span><b>◆</b>
+        <span>RESEARCH & DEVELOPMENT LABS</span><b>◆</b>
+      </div>
+    </section>
+
+    <!-- ABOUT / EXECUTIVE MANIFESTO -->
+    <section class="section about" id="about">
+      <div class="section-label reveal"><span>01</span><span data-ar="الهوية المؤسسية" data-en="CORPORATE IDENTITY">الهوية المؤسسية</span></div>
+      <div class="about-layout">
+        <div class="about-heading reveal">
+          <h2 data-ar="نحن لا نبني مجرد برمجيات.<br>نحن نصنع <em>معيار الصناعة.</em>" data-en="We don't just write code.<br>We set the <em>industry standard.</em>">نحن لا نبني مجرد برمجيات.<br>نحن نصنع <em>معيار الصناعة.</em></h2>
+        </div>
+        <div class="about-text reveal">
+          <p class="lead" data-ar="تأسست PHARAOH TEC برؤية واضحة: بناء قوة تكنولوجية عالمية تنطلق من مصر لتنافس كبرى شركات التكنولوجيا في العالم." data-en="PHARAOH TEC was engineered with a singular mandate: to build a global technology powerhouse rooted in Egypt and competing at the highest international tier.">تأسست PHARAOH TEC برؤية واضحة: بناء قوة تكنولوجية عالمية تنطلق من مصر لتنافس كبرى شركات التكنولوجيا في العالم.</p>
+          <p data-ar="نجمع بين هندسة البرمجيات فائقة الدقة، أبحاث الذكاء الاصطناعي التطبيقي، التصميم المؤسسي المتطور، والأمن السيبراني. كل منتج يخرج من مختبراتنا مصمم ليعمل بكفاءة تحت أصعب الظروف، ويتوسع ليخدم ملايين المستخدمين حول العالم." data-en="We fuse precision software engineering, applied AI research, executive product design, and offensive-grade cybersecurity. Every platform emerging from our labs is built for resilience, speed, and global scale.">نجمع بين هندسة البرمجيات فائقة الدقة، أبحاث الذكاء الاصطناعي التطبيقي، التصميم المؤسسي المتطور، والأمن السيبراني. كل منتج يخرج من مختبراتنا مصمم ليعمل بكفاءة تحت أصعب الظروف، ويتوسع ليخدم ملايين المستخدمين حول العالم.</p>
+          <div class="exec-quote">
+            <p data-ar="«الابتكار الحقيقي هو تحويل التعقيد التكنولوجي إلى قوة بسيطة بين يدي المستخدم.»" data-en="“True innovation is transforming deep technological complexity into effortless power for the user.”">«الابتكار الحقيقي هو تحويل التعقيد التكنولوجي إلى قوة بسيطة بين يدي المستخدم.»</p>
+            <span class="mono">— PHARAOH TEC EXECUTIVE BOARD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="principles">
+        <article class="principle reveal">
+          <span class="mono">01 // FIRST-PRINCIPLES</span>
+          <h3 data-ar="الهندسة من الجذور" data-en="First-Principles Engineering">الهندسة من الجذور</h3>
+          <p data-ar="نحلل التحديات من أساسها العلمي والتقني لنبتكر حلولًا جذرية تتجاوز الحلول التقليدية." data-en="We deconstruct complex challenges to their fundamental truths to engineer breakthrough solutions.">نحلل التحديات من أساسها العلمي والتقني لنبتكر حلولًا جذرية تتجاوز الحلول التقليدية.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="mono">02 // HYPERSCALE</span>
+          <h3 data-ar="جاهزية التوسع العالمي" data-en="Built for Global Scale">جاهزية التوسع العالمي</h3>
+          <p data-ar="بنية برمجية مرنة تدعم تعدد اللغات، التوزيع السحابي، والأداء الفوري في أي مكان في العالم." data-en="Modular architectures engineered for multi-region deployment, localization, and sub-second latency.">بنية برمجية مرنة تدعم تعدد اللغات، التوزيع السحابي، والأداء الفوري في أي مكان في العالم.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="mono">03 // ZERO-TRUST</span>
+          <h3 data-ar="الأمان والخصوصية أولًا" data-en="Security & Trust by Design">الأمان والخصوصية أولًا</h3>
+          <p data-ar="نطبق أعلى بروتوكولات حماية البيانات وتأمين البرمجيات في كل سطر كود نكتبه." data-en="Strict data governance and end-to-end security protocols embedded into every layer of our stack.">نطبق أعلى بروتوكولات حماية البيانات وتأمين البرمجيات في كل سطر كود نكتبه.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- DIVISIONS -->
+    <section class="section dark-section" id="divisions">
+      <div class="section-label reveal"><span>02</span><span data-ar="قطاعات الشركة" data-en="GLOBAL DIVISIONS">قطاعات الشركة</span></div>
+      <div class="section-intro reveal">
+        <h2 data-ar="أربعة قطاعات استراتيجية.<br><em>منظومة واحدة متكاملة.</em>" data-en="Four strategic divisions.<br><em>One unified powerhouse.</em>">أربعة قطاعات استراتيجية.<br><em>منظومة واحدة متكاملة.</em></h2>
+        <p data-ar="تعمل قطاعاتنا الهندسية والبحثية بتناغم تام لبناء جيل جديد من المنتجات الرقمية الذكية." data-en="Our engineering and research divisions operate in synergy to pioneer next-generation digital ecosystems.">تعمل قطاعاتنا الهندسية والبحثية بتناغم تام لبناء جيل جديد من المنتجات الرقمية الذكية.</p>
+      </div>
+      <div class="division-grid">
+        <article class="division-card reveal">
+          <div class="division-top"><span class="mono">DIV // 01</span><span class="line-icon">⌘</span></div>
+          <h3>Enterprise Software</h3>
+          <p data-ar="هندسة المنصات الرقمية الكبرى، تطبيقات الويب المتقدمة، والأنظمة السحابية عالية الاعتمادية." data-en="Engineering flagship web platforms, progressive applications, and high-availability cloud systems.">هندسة المنصات الرقمية الكبرى، تطبيقات الويب المتقدمة، والأنظمة السحابية عالية الاعتمادية.</p>
+          <small class="mono">PLATFORMS · CLOUD · SYSTEMS</small>
+        </article>
+        <article class="division-card reveal">
+          <div class="division-top"><span class="mono">DIV // 02</span><span class="line-icon">✳</span></div>
+          <h3>Artificial Intelligence</h3>
+          <p data-ar="تطوير الأنظمة الذكية، التحليل التنبؤي، وأتمتة الأعمال باستخدام أحدث تقنيات الذكاء الاصطناعي." data-en="Developing intelligent agents, predictive analytics, and enterprise automation powered by modern AI.">تطوير الأنظمة الذكية، التحليل التنبؤي، وأتمتة الأعمال باستخدام أحدث تقنيات الذكاء الاصطناعي.</p>
+          <small class="mono">AI AGENTS · ML · DATA SCIENCE</small>
+        </article>
+        <article class="division-card reveal">
+          <div class="division-top"><span class="mono">DIV // 03</span><span class="line-icon">⌁</span></div>
+          <h3>Cybersecurity</h3>
+          <p data-ar="تأمين البنية التحتية الرقمية، اختبار الاختراق، وحماية بيانات المؤسسات والمستخدمين." data-en="Hardening digital infrastructure, code auditing, and safeguarding enterprise and user data.">تأمين البنية التحتية الرقمية، اختبار الاختراق، وحماية بيانات المؤسسات والمستخدمين.</p>
+          <small class="mono">ZERO-TRUST · AUDIT · PRIVACY</small>
+        </article>
+        <article class="division-card reveal">
+          <div class="division-top"><span class="mono">DIV // 04</span><span class="line-icon">⌬</span></div>
+          <h3>PHARAOH Labs (R&D)</h3>
+          <p data-ar="مختبر الأبحاث والابتكار لاستكشاف تقنيات المستقبل وتحويل الأفكار الجريئة إلى منتجات عالمية." data-en="Our dedicated R&D division prototyping emerging technologies and incubating future ventures.">مختبر الأبحاث والابتكار لاستكشاف تقنيات المستقبل وتحويل الأفكار الجريئة إلى منتجات عالمية.</p>
+          <small class="mono">INNOVATION · PROTOTYPES · FUTURE</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SHOWCASE -->
+    <section class="section products" id="products">
+      <div class="section-label reveal"><span>03</span><span data-ar="منظومة المنتجات" data-en="PRODUCT ECOSYSTEM">منظومة المنتجات</span></div>
+      <div class="section-intro reveal">
+        <h2 data-ar="منتجات عالمية<br><em>تعمل على أرض الواقع.</em>" data-en="Flagship platforms<br><em>engineered for impact.</em>">منتجات عالمية<br><em>تعمل على أرض الواقع.</em></h2>
+        <p data-ar="استكشف محفظة المنتجات والمنصات الرقمية التي تم تطويرها وإطلاقها بواسطة PHARAOH TEC." data-en="Explore our portfolio of live digital platforms and intelligent tools built by PHARAOH TEC.">استكشف محفظة المنتجات والمنصات الرقمية التي تم تطويرها وإطلاقها بواسطة PHARAOH TEC.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="tablist" aria-label="Filter products">
+        <button class="filter-btn active" data-filter="all" data-ar="جميع المنصات (4)" data-en="All Platforms (4)">جميع المنصات (4)</button>
+        <button class="filter-btn" data-filter="ai" data-ar="الذكاء الاصطناعي" data-en="AI & Intelligence">الذكاء الاصطناعي</button>
+        <button class="filter-btn" data-filter="productivity" data-ar="الإنتاجية والأعمال" data-en="Productivity & OS">الإنتاجية والأعمال</button>
+        <button class="filter-btn" data-filter="platform" data-ar="الشبكات والمنصات" data-en="Networks & Talent">الشبكات والمنصات</button>
+      </div>
+
+      <div class="product-grid" id="productList">
+        <!-- Product 1 -->
+        <article class="product-card reveal" data-category="ai">
+          <div class="product-visual aura-visual">
+            <div class="aura-ring"></div>
+            <span class="prod-badge mono">LIVE // v2.4</span>
+            <span class="prod-logo">AURA</span>
+            <small>GLOBAL AI PROPADVISOR</small>
+          </div>
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="tag">ARTIFICIAL INTELLIGENCE · PROPTECH</span>
+              <span class="mono prod-id">01</span>
+            </div>
+            <h3>AURA Global AI PropAdvisor</h3>
+            <p data-ar="منصة استشارات وتحليل استثماري عقاري عالمي مدعومة بالذكاء الاصطناعي، توفر رؤى سوقية دقيقة وأدوات تقييم ذكية للمستثمرين." data-en="An AI-driven global real-estate advisory and market intelligence platform delivering predictive valuation and analytical insights.">منصة استشارات وتحليل استثماري عقاري عالمي مدعومة بالذكاء الاصطناعي، توفر رؤى سوقية دقيقة وأدوات تقييم ذكية للمستثمرين.</p>
+            <div class="tech-pills mono">
+              <span>AI Engine</span><span>Predictive Analytics</span><span>Global Data</span>
+            </div>
+            <div class="product-footer">
+              <a href="https://kemo-777.github.io/aura-global-ai-propadvisor/" target="_blank" rel="noopener" class="prod-link">
+                <span data-ar="إطلاق المنصة" data-en="Launch Platform">إطلاق المنصة</span> ↗
+              </a>
+              <button type="button" class="case-btn" data-product="aura" data-ar="التفاصيل التقنية" data-en="Specs">التفاصيل التقنية</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card reveal" data-category="platform">
+          <div class="product-visual talent-visual">
+            <div class="talent-star">✦</div>
+            <span class="prod-badge mono">LIVE // NETWORK</span>
+            <span class="prod-logo">PHARAOH</span>
+            <small>TALENT ECOSYSTEM</small>
+          </div>
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="tag">TALENT NETWORK · DISCOVERY</span>
+              <span class="mono prod-id">02</span>
+            </div>
+            <h3>PHARAOH TALENT</h3>
+            <p data-ar="منصة عالمية لاكتشاف المواهب الاستثنائية وربط المبدعين والمطورين بالشركات والمؤسسات الرائدة الباحثة عن الكفاءات." data-en="A curated global talent-discovery network connecting elite creators, engineers, and innovators with visionary organizations.">منصة عالمية لاكتشاف المواهب الاستثنائية وربط المبدعين والمطورين بالشركات والمؤسسات الرائدة الباحثة عن الكفاءات.</p>
+            <div class="tech-pills mono">
+              <span>Talent Graph</span><span>Smart Matching</span><span>Cloud Profile</span>
+            </div>
+            <div class="product-footer">
+              <a href="https://kemo-777.github.io/Pharaoh-talent/" target="_blank" rel="noopener" class="prod-link">
+                <span data-ar="إطلاق المنصة" data-en="Launch Platform">إطلاق المنصة</span> ↗
+              </a>
+              <button type="button" class="case-btn" data-product="talent" data-ar="التفاصيل التقنية" data-en="Specs">التفاصيل التقنية</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card reveal" data-category="productivity">
+          <div class="product-visual life-visual">
+            <div class="life-orbit">L</div>
+            <span class="prod-badge mono">LIVE // WORKSPACE</span>
+            <span class="prod-logo">LIFEOS</span>
+            <small>PERSONAL OPERATING SYSTEM</small>
+          </div>
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="tag">PRODUCTIVITY · LIVE ANALYTICS</span>
+              <span class="mono prod-id">03</span>
+            </div>
+            <h3>LifeOS</h3>
+            <p data-ar="نظام تشغيل شخصي ومهني متكامل لتنظيم سير العمل، متابعة المؤشرات الحيوية للبيانات، وإدارة المهام بأعلى درجات الوضوح." data-en="An integrated personal and executive operating system for workflow orchestration, live metrics tracking, and high-clarity execution.">نظام تشغيل شخصي ومهني متكامل لتنظيم سير العمل، متابعة المؤشرات الحيوية للبيانات، وإدارة المهام بأعلى درجات الوضوح.</p>
+            <div class="tech-pills mono">
+              <span>Live Charts</span><span>Workflow OS</span><span>Real-Time UI</span>
+            </div>
+            <div class="product-footer">
+              <a href="https://kemo-777.github.io/livecharts/" target="_blank" rel="noopener" class="prod-link">
+                <span data-ar="إطلاق المنصة" data-en="Launch Platform">إطلاق المنصة</span> ↗
+              </a>
+              <button type="button" class="case-btn" data-product="lifeos" data-ar="التفاصيل التقنية" data-en="Specs">التفاصيل التقنية</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card reveal" data-category="productivity">
+          <div class="product-visual matrix-visual">
+            <div class="matrix-symbol">◈</div>
+            <span class="prod-badge mono">LIVE // PRO</span>
+            <span class="prod-logo">TIME MATRIX</span>
+            <small>STRATEGIC TIME ENGINE</small>
+          </div>
+          <div class="product-body">
+            <div class="product-meta">
+              <span class="tag">EXECUTIVE PLANNING · WEB APP</span>
+              <span class="mono prod-id">04</span>
+            </div>
+            <h3>Time Matrix Pro</h3>
+            <p data-ar="محرك ذكي لإدارة الأولويات الاستراتيجية وتوزيع الوقت وفق مصفوفة القرارات التنفيذية لرفع الإنتاجية القصوى." data-en="An executive priority-management engine built on strategic decision matrices to maximize focus and high-leverage output.">محرك ذكي لإدارة الأولويات الاستراتيجية وتوزيع الوقت وفق مصفوفة القرارات التنفيذية لرفع الإنتاجية القصوى.</p>
+            <div class="tech-pills mono">
+              <span>Decision Matrix</span><span>Focus Engine</span><span>Zero-Latency</span>
+            </div>
+            <div class="product-footer">
+              <a href="https://kemo-777.github.io/KMO/" target="_blank" rel="noopener" class="prod-link">
+                <span data-ar="إطلاق المنصة" data-en="Launch Platform">إطلاق المنصة</span> ↗
+              </a>
+              <button type="button" class="case-btn" data-product="matrix" data-ar="التفاصيل التقنية" data-en="Specs">التفاصيل التقنية</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ENTERPRISE TECH STACK & ARCHITECTURE -->
+    <section class="section dark-section arch-section" id="architecture">
+      <div class="section-label reveal"><span>04</span><span data-ar="البنية التحتية والتقنيات" data-en="TECHNOLOGY ARCHITECTURE">البنية التحتية والتقنيات</span></div>
+      <div class="section-intro reveal">
+        <h2 data-ar="مبني بأحدث<br><em>التقنيات العالمية.</em>" data-en="Engineered with<br><em>frontier technologies.</em>">مبني بأحدث<br><em>التقنيات العالمية.</em></h2>
+        <p data-ar="نعتمد على منظومة تقنية متطورة تضمن السرعة الفائقة، الأمان المطلق، وقابلية التوسع بلا حدود." data-en="Our modern engineering stack guarantees sub-second speed, hardened security, and seamless global scalability.">نعتمد على منظومة تقنية متطورة تضمن السرعة الفائقة، الأمان المطلق، وقابلية التوسع بلا حدود.</p>
+      </div>
+
+      <div class="arch-grid reveal">
+        <div class="arch-card">
+          <div class="arch-icon">⚡</div>
+          <h4 data-ar="هندسة الواجهات الفائقة" data-en="Frontend & Edge UI">هندسة الواجهات الفائقة</h4>
+          <p data-ar="تجارب مستخدم تفاعلية بسرعة استجابة فورية وتوافق كامل مع كافة الأجهزة والشاشات." data-en="Ultra-responsive interfaces engineered for 60fps fluidity and universal cross-device precision.">تجارب مستخدم تفاعلية بسرعة استجابة فورية وتوافق كامل مع كافة الأجهزة والشاشات.</p>
+          <div class="arch-tags mono"><span>HTML5</span><span>CSS3 Grid</span><span>ES6+</span><span>WebGL / Canvas</span></div>
+        </div>
+        <div class="arch-card">
+          <div class="arch-icon">🧠</div>
+          <h4 data-ar="الذكاء الاصطناعي والأتمتة" data-en="AI & Intelligent Pipelines">الذكاء الاصطناعي والأتمتة</h4>
+          <p data-ar="دمج النماذج اللغوية الكبيرة، تحليل البيانات، وأنظمة التوصية الذكية داخل المنتجات." data-en="Integrating LLMs, predictive data pipelines, and autonomous workflows directly into core products.">دمج النماذج اللغوية الكبيرة، تحليل البيانات، وأنظمة التوصية الذكية داخل المنتجات.</p>
+          <div class="arch-tags mono"><span>LLMs</span><span>Python</span><span>Predictive AI</span><span>Data APIs</span></div>
+        </div>
+        <div class="arch-card">
+          <div class="arch-icon">🛡️</div>
+          <h4 data-ar="الأمن السيبراني والحوسبة السحابية" data-en="Cloud & Zero-Trust Security">الأمن السيبراني والحوسبة السحابية</h4>
+          <p data-ar="نشر سحابي موزع عالميًا مع تشفير البيانات وحماية شاملة ضد الثغرات." data-en="Globally distributed edge deployment with hardened encryption and continuous vulnerability defense.">نشر سحابي موزع عالميًا مع تشفير البيانات وحماية شاملة ضد الثغرات.</p>
+          <div class="arch-tags mono"><span>Edge CDN</span><span>HTTPS/TLS</span><span>Zero-Trust</span><span>CI/CD</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / ENTERPRISE SOLUTIONS -->
+    <section class="section services" id="services">
+      <div class="section-label reveal"><span>05</span><span data-ar="الحلول والخدمات" data-en="ENTERPRISE SOLUTIONS">الحلول والخدمات</span></div>
+      <div class="section-intro reveal">
+        <h2 data-ar="نحول رؤيتك<br>إلى <em>واقع رقمي عالمي.</em>" data-en="Transforming vision<br>into <em>global reality.</em>">نحول رؤيتك<br>إلى <em>واقع رقمي عالمي.</em></h2>
+        <p data-ar="شراكة هندسية متكاملة للشركات الناشئة، المؤسسات، ورواد الأعمال لبناء منتجات تنافس عالميًا." data-en="End-to-end engineering partnerships for startups, enterprises, and visionary founders.">شراكة هندسية متكاملة للشركات الناشئة، المؤسسات، ورواد الأعمال لبناء منتجات تنافس عالميًا.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-item reveal">
+          <span class="mono">01</span>
+          <h3 data-ar="هندسة المنصات ومواقع الشركات الكبرى" data-en="Flagship Web Platforms & Corporate Sites">هندسة المنصات ومواقع الشركات الكبرى</h3>
+          <p data-ar="تصميم وتطوير مواقع ومنصات ويب بمستوى الشركات العالمية، سريعة، متجاوبة، ومهيأة لمحركات البحث." data-en="Bespoke corporate websites and high-conversion web platforms engineered for speed, SEO, and global appeal.">تصميم وتطوير مواقع ومنصات ويب بمستوى الشركات العالمية، سريعة، متجاوبة، ومهيأة لمحركات البحث.</p>
+        </div>
+        <div class="service-item reveal">
+          <span class="mono">02</span>
+          <h3 data-ar="تطوير الأنظمة والتطبيقات المخصصة" data-en="Custom Software & SaaS Systems">تطوير الأنظمة والتطبيقات المخصصة</h3>
+          <p data-ar="بناء أنظمة إدارة العمليات، لوحات البيانات التفاعلية، ومنتجات البرمجيات كخدمة (SaaS)." data-en="Building scalable SaaS products, executive dashboards, and custom enterprise workflow systems.">بناء أنظمة إدارة العمليات، لوحات البيانات التفاعلية، ومنتجات البرمجيات كخدمة (SaaS).</p>
+        </div>
+        <div class="service-item reveal">
+          <span class="mono">03</span>
+          <h3 data-ar="دمج حلول الذكاء الاصطناعي" data-en="Applied AI & Smart Automation">دمج حلول الذكاء الاصطناعي</h3>
+          <p data-ar="تطوير نماذج أولية ذكية (AI MVPs) ودمج المساعدات الذكية وتحليل البيانات في أعمالك." data-en="Rapid AI MVP prototyping, intelligent assistants, and automated data intelligence pipelines.">تطوير نماذج أولية ذكية (AI MVPs) ودمج المساعدات الذكية وتحليل البيانات في أعمالك.</p>
+        </div>
+        <div class="service-item reveal">
+          <span class="mono">04</span>
+          <h3 data-ar="تصميم أنظمة وتجربة المستخدم (UI/UX)" data-en="Executive UI/UX & Design Systems">تصميم أنظمة وتجربة المستخدم (UI/UX)</h3>
+          <p data-ar="ابتكار هويات رقمية فاخرة وأنظمة تصميم متكاملة تمنح عملاءك تجربة استخدام لا تُنسى." data-en="Crafting luxury digital identities and scalable design systems that elevate user engagement.">ابتكار هويات رقمية فاخرة وأنظمة تصميم متكاملة تمنح عملاءك تجربة استخدام لا تُنسى.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP / GLOBAL VISION -->
+    <section class="section vision dark-section" id="roadmap">
+      <div class="section-label reveal"><span>06</span><span data-ar="خارطة الطريق والرؤية" data-en="STRATEGIC ROADMAP">خارطة الطريق والرؤية</span></div>
+      <div class="vision-content reveal">
+        <div class="vision-orb">PT</div>
+        <div>
+          <span class="tag">THE 2026–2030 HORIZON</span>
+          <h2 data-ar="من مصر إلى<br><em>قمة التكنولوجيا العالمية.</em>" data-en="From Egypt to the<br><em>global tech frontier.</em>">من مصر إلى<br><em>قمة التكنولوجيا العالمية.</em></h2>
+          <p data-ar="نحن نبني PHARAOH TEC لتكون رمزًا للريادة التكنولوجية العربية والعالمية. عبر الاستثمار المستمر في البحث والتطوير، بناء منتجات ذكاء اصطناعي مبتكرة، وتوسيع شراكاتنا الدولية، نرسم مستقبلًا تصنعه عقولنا." data-en="We are building PHARAOH TEC as a benchmark for global technological excellence. Through relentless R&D, proprietary AI platforms, and strategic international alliances, we are engineering the future.">نحن نبني PHARAOH TEC لتكون رمزًا للريادة التكنولوجية العربية والعالمية. عبر الاستثمار المستمر في البحث والتطوير، بناء منتجات ذكاء اصطناعي مبتكرة، وتوسيع شراكاتنا الدولية، نرسم مستقبلًا تصنعه عقولنا.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-track reveal">
+        <div class="rm-step done">
+          <span class="mono">PHASE 01 · COMPLETED</span>
+          <h4 data-ar="التأسيس وإطلاق المنتجات الأساسية" data-en="Foundation & Core Releases">التأسيس وإطلاق المنتجات الأساسية</h4>
+          <p data-ar="إطلاق منظومة المنتجات الأولية (AURA، PHARAOH TALENT، LifeOS، Time Matrix Pro)." data-en="Successful deployment of flagship ecosystem apps (AURA, PHARAOH TALENT, LifeOS, Time Matrix Pro).">إطلاق منظومة المنتجات الأولية (AURA، PHARAOH TALENT، LifeOS، Time Matrix Pro).</p>
+        </div>
+        <div class="rm-step active">
+          <span class="mono">PHASE 02 · ACTIVE (2026)</span>
+          <h4 data-ar="التوسع في الذكاء الاصطناعي والشراكات" data-en="AI Expansion & Global Alliances">التوسع في الذكاء الاصطناعي والشراكات</h4>
+          <p data-ar="تطوير قدرات الذكاء الاصطناعي التوليدي وبناء شراكات تقنية وتجارية عابرة للحدود." data-en="Scaling generative AI capabilities and forging cross-border enterprise partnerships.">تطوير قدرات الذكاء الاصطناعي التوليدي وبناء شراكات تقنية وتجارية عابرة للحدود.</p>
+        </div>
+        <div class="rm-step">
+          <span class="mono">PHASE 03 · HORIZON</span>
+          <h4 data-ar="منظومة سحابية متكاملة للمؤسسات" data-en="Enterprise Cloud Ecosystem">منظومة سحابية متكاملة للمؤسسات</h4>
+          <p data-ar="إطلاق بنية سحابية موحدة تخدم الشركات والمطورين في الشرق الأوسط والعالم." data-en="Launching unified cloud APIs and enterprise suites serving businesses worldwide.">إطلاق بنية سحابية موحدة تخدم الشركات والمطورين في الشرق الأوسط والعالم.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / EXECUTIVE DESK -->
+    <section class="section contact" id="contact">
+      <div class="section-label reveal"><span>07</span><span data-ar="مكتب التواصل التنفيذي" data-en="EXECUTIVE CONTACT DESK">مكتب التواصل التنفيذي</span></div>
+      <div class="contact-layout">
+        <div class="reveal">
+          <h2 data-ar="هل لديك مشروع طموح؟<br><em>فلنبدأ البناء معًا.</em>" data-en="Have an ambitious vision?<br><em>Let's engineer it together.</em>">هل لديك مشروع طموح؟<br><em>فلنبدأ البناء معًا.</em></h2>
+          <p data-ar="فريقنا جاهز لمناقشة مشاريعك التقنية، الشراكات الاستراتيجية، أو الاستفسارات حول منتجاتنا. تواصل معنا مباشرة عبر البريد الرسمي أو النموذج." data-en="Our team is ready to discuss enterprise projects, strategic partnerships, or product inquiries. Connect directly via our official email or executive form.">فريقنا جاهز لمناقشة مشاريعك التقنية، الشراكات الاستراتيجية، أو الاستفسارات حول منتجاتنا. تواصل معنا مباشرة عبر البريد الرسمي أو النموذج.</p>
+
+          <div class="direct-contact-card">
+            <span class="dc-label" data-ar="البريد الإلكتروني الرسمي للشركة" data-en="OFFICIAL CORPORATE EMAIL">البريد الإلكتروني الرسمي للشركة</span>
+            <div class="dc-row">
+              <a href="mailto:kareemabdelrazek289@gmail.com" class="dc-email">kareemabdelrazek289@gmail.com</a>
+              <button type="button" class="copy-email-btn" id="copyEmailBtn" data-ar="نسخ البريد" data-en="Copy Email">نسخ البريد</button>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:kareemabdelrazek289@gmail.com">Official Email ↗</a>
+            <a href="https://github.com/kemo-777" target="_blank" rel="noopener">GitHub Engineering ↗</a>
+            <a href="https://www.tiktok.com/@pharaohtec00" target="_blank" rel="noopener">TikTok Official ↗</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row-2">
+            <label><span data-ar="الاسم الكامل / المؤسسة" data-en="Full Name / Organization">الاسم الكامل / المؤسسة</span><input required name="name" placeholder="Kareem Abdelrazek"></label>
+            <label><span data-ar="البريد الإلكتروني أو الهاتف" data-en="Your Email or Phone">البريد الإلكتروني أو الهاتف</span><input required name="contact" placeholder="name@company.com"></label>
+          </div>
+          <label><span data-ar="موضوع التواصل" data-en="Subject / Division">موضوع التواصل</span>
+            <select name="topic">
+              <option value="Enterprise Software Project">تطوير منصة أو نظام برمجي / Software Project</option>
+              <option value="AI & Automation Solution">حلول الذكاء الاصطناعي / AI Solution</option>
+              <option value="Strategic Partnership">شراكة استراتيجية / Strategic Partnership</option>
+              <option value="General / Media Inquiry">استفسار عام / General Inquiry</option>
+            </select>
+          </label>
+          <label><span data-ar="تفاصيل المشروع أو الرسالة" data-en="Project Scope / Message">تفاصيل المشروع أو الرسالة</span><textarea required name="message" rows="4" placeholder="Describe your vision, goals, and requirements..."></textarea></label>
+          <div class="form-actions-grid">
+            <button class="btn primary submit-btn" type="submit" id="mailtoBtn">
+              <span data-ar="إرسال مباشر عبر البريد" data-en="Send via Email">إرسال مباشر عبر البريد</span> ✉
+            </button>
+            <button class="btn outline-dark copy-msg-btn" type="button" id="copyMsgBtn">
+              <span data-ar="نسخ الرسالة" data-en="Copy Message">نسخ الرسالة</span> ⧉
+            </button>
+          </div>
+          <p class="form-hint" id="formHint" aria-live="polite" data-ar="سيتم توجيه رسالتك مباشرة إلى البريد الرسمي: kareemabdelrazek289@gmail.com" data-en="Your inquiry will be formatted and directed to: kareemabdelrazek289@gmail.com">سيتم توجيه رسالتك مباشرة إلى البريد الرسمي: kareemabdelrazek289@gmail.com</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Product Technical Specs Modal -->
+  <div class="modal-backdrop" id="specModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <span class="mono modal-tag" id="modalTag">SYSTEM ARCHITECTURE</span>
+        <button type="button" class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      </div>
+      <h3 id="modalTitle">Product Title</h3>
+      <p id="modalDesc">Product description</p>
+      <div class="modal-specs" id="modalSpecs"></div>
+      <div class="modal-footer">
+        <a href="#" target="_blank" rel="noopener" class="btn primary" id="modalLaunch">Launch Live Product ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette (Ctrl+K / Cmd+K) -->
+  <div class="modal-backdrop" id="cmdModal" aria-hidden="true">
+    <div class="cmd-box" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <div class="cmd-head">
+        <span class="mono">PHARAOH TEC // QUICK NAVIGATION</span>
+        <button type="button" class="modal-close" id="cmdClose">ESC</button>
+      </div>
+      <div class="cmd-list" id="cmdList">
+        <a href="#home" class="cmd-item"><span>00</span><strong data-ar="الواجهة الرئيسية" data-en="Home & Core">الواجهة الرئيسية</strong></a>
+        <a href="#about" class="cmd-item"><span>01</span><strong data-ar="عن الشركة والرؤية" data-en="Corporate Identity">عن الشركة والرؤية</strong></a>
+        <a href="#divisions" class="cmd-item"><span>02</span><strong data-ar="قطاعات الشركة الأربعة" data-en="Global Divisions">قطاعات الشركة الأربعة</strong></a>
+        <a href="#products" class="cmd-item"><span>03</span><strong data-ar="منظومة المنتجات والمنصات" data-en="Product Ecosystem">منظومة المنتجات والمنصات</strong></a>
+        <a href="#architecture" class="cmd-item"><span>04</span><strong data-ar="البنية التحتية والتقنيات" data-en="Tech Architecture">البنية التحتية والتقنيات</strong></a>
+        <a href="#services" class="cmd-item"><span>05</span><strong data-ar="الحلول والخدمات المؤسسية" data-en="Enterprise Solutions">الحلول والخدمات المؤسسية</strong></a>
+        <a href="#roadmap" class="cmd-item"><span>06</span><strong data-ar="خارطة الطريق 2026-2030" data-en="Strategic Roadmap">خارطة الطريق 2026-2030</strong></a>
+        <a href="#contact" class="cmd-item"><span>07</span><strong data-ar="تواصل معنا (kareemabdelrazek289@gmail.com)" data-en="Contact Desk">تواصل معنا (kareemabdelrazek289@gmail.com)</strong></a>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="#home"><span class="brand-mark">P<span>T</span></span><span class="brand-name">PHARAOH <b>TEC</b><small>GLOBAL TECHNOLOGY CORPORATION</small></span></a>
+        <p data-ar="مؤسسة تكنولوجية عالمية تبني البرمجيات المتقدمة ومنظومات الذكاء الاصطناعي من مصر إلى العالم." data-en="A global technology enterprise engineering advanced software and artificial intelligence ecosystems from Egypt to the world.">مؤسسة تكنولوجية عالمية تبني البرمجيات المتقدمة ومنظومات الذكاء الاصطناعي من مصر إلى العالم.</p>
+      </div>
+      <div class="footer-nav-col">
+        <strong data-ar="القطاعات" data-en="Divisions">القطاعات</strong>
+        <a href="#divisions">Enterprise Software</a>
+        <a href="#divisions">Artificial Intelligence</a>
+        <a href="#divisions">Cybersecurity</a>
+        <a href="#divisions">PHARAOH Labs</a>
+      </div>
+      <div class="footer-nav-col">
+        <strong data-ar="المنصات" data-en="Platforms">المنصات</strong>
+        <a href="https://kemo-777.github.io/aura-global-ai-propadvisor/" target="_blank" rel="noopener">AURA PropAdvisor</a>
+        <a href="https://kemo-777.github.io/Pharaoh-talent/" target="_blank" rel="noopener">PHARAOH TALENT</a>
+        <a href="https://kemo-777.github.io/livecharts/" target="_blank" rel="noopener">LifeOS</a>
+        <a href="https://kemo-777.github.io/KMO/" target="_blank" rel="noopener">Time Matrix Pro</a>
+      </div>
+      <div class="footer-nav-col">
+        <strong data-ar="التواصل الرسمي" data-en="Official Contact">التواصل الرسمي</strong>
+        <a href="mailto:kareemabdelrazek289@gmail.com" class="gold-link">kareemabdelrazek289@gmail.com</a>
+        <a href="https://github.com/kemo-777" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.tiktok.com/@pharaohtec00" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> PHARAOH TEC CORPORATION. <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></span>
+      <span class="mono">ENGINEERED IN EGYPT · BUILT FOR THE WORLD</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
